@@ -4,7 +4,6 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 
-import { ProSidebarProvider } from "react-pro-sidebar";
 import { ContextProvider } from "./contexts/ContextProvider";
 import { AuthContextProvider } from "./contexts/AuthContext";
 
@@ -13,9 +12,7 @@ root.render(
   <React.StrictMode>
     <AuthContextProvider>
       <ContextProvider>
-        <ProSidebarProvider>
-          <App />
-        </ProSidebarProvider>
+        <App />
       </ContextProvider>
     </AuthContextProvider>
   </React.StrictMode>
